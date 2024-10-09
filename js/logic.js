@@ -33,13 +33,8 @@ function appendToOutput(val) {
         }
     }
     else if (currentExp.includes("!") && currentExp.length > 1 && (currentExp.slice(0,1) !== '!')){
-        if (currentExp.endsWith("!")){
-            output.value = "Error";
-        }
-        else{
             result = factorial(currentExp.slice(0, currentExp.length-1));
             output.value = `${input.value} = ${result}`;
-        }
     }
     else if (currentExp.includes("%")){
         result = currentExp.slice(0, currentExp.length-1)/100;
@@ -62,7 +57,7 @@ function appendToOutput(val) {
 }
 function searchErrors(value) {
     try {
-        if (!value.endsWith("+") && !value.endsWith("-") && !value.endsWith("*") && !value.endsWith("/") && !value.endsWith("(") && !value.endsWith("!") && !value.endsWith("^")){
+        if (!value.endsWith("+") && !value.endsWith("-") && !value.endsWith("*") && !value.endsWith("/") && !value.endsWith("(") && !value.endsWith("^")){
             result = eval(value);
             if (!Number.isNaN(result)){
                 output.value = `${input.value} = ${result}`;
