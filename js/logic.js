@@ -24,7 +24,7 @@ function appendToOutput(val) {
     if (currentExp.includes("+") || currentExp.includes("-") || currentExp.includes("*") || currentExp.includes("/")) {
         searchErrors(currentExp);
     }
-    else if (currentExp.includes("sqrt") || currentExp.includes("sin") || currentExp.includes("asin") || currentExp.includes("cos") || currentExp.includes("acos") || currentExp.includes("tan") || currentExp.includes("atan")) {
+    else if (currentExp.includes("sqrt") || currentExp.includes("sin") || currentExp.includes("asin") || currentExp.includes("cos") || currentExp.includes("acos") || currentExp.includes("tan") || currentExp.includes("atan") || currentExp.includes("1/(")) {
         if (currentExp.endsWith("0") || currentExp.endsWith("1") || currentExp.endsWith("2") || currentExp.endsWith("3") || currentExp.endsWith("4") || currentExp.endsWith("5") || currentExp.endsWith("6") || currentExp.endsWith("7")|| currentExp.endsWith("8") || currentExp.endsWith("9")){
             output.value = "you have not closed bracket `)`";
         }
