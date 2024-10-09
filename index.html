@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Calculator</h1>
+        <header class="header">
+            <div class="header__windows">
+                <input class="header__output" type="text" id="output" readonly />
+                <input class="header__input" type="text" id="input" placeholder="0" readonly/>
+            </div>
+            <div class="header__btn">
+                <button id="adaptiveOpen" class="header__btn-adaptive">≣</button>
+                <nav id="func" class="header__btn-func">
+                    <button>x<sup>y</sup></button>
+                    <button>x!</button>
+                    <button>√</button>
+                    <button>1/x</button>
+                    <button>sin</button>
+                    <button>asin</button>
+                    <button>cos</button>
+                    <button>acos</button>
+                    <button>tan</button>
+                    <button>atan</button>
+                    <button>π</button>
+                    <button>e</button>
+                </nav>
+                <nav id="numbers" class="header__btn-numbers">
+                    <button>C</button>
+                    <button>()</button>
+                    <button>%</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button id="adaptive" class="header__btn-numbers-adaptive">≣</button>
+                    <button class="header__btn-numbers-null">0</button>
+                    <button>,</button>
+                </nav>
+                <nav class="header__btn-symbols">
+                    <button>÷</button>
+                    <button>×</button>
+                    <button>-</button>
+                    <button>+</button>
+                    <button>=</button>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <script src="js/logic.js"></script>
+    <script src="js/adaptive.js"></script>
+</body>
+</html>

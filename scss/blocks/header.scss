@@ -1,0 +1,181 @@
+.header {
+    background-color: black;
+    width: 550px;
+    height: 100%;
+    margin: 0 auto;
+
+    &__windows{
+        display: flex;
+        flex-direction: column;
+
+        #output {
+            color: transparent; 
+            text-shadow: 0 0 0 rgb(111, 108, 108);
+        }
+
+        input {
+            padding: 12px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+        
+        &-adaptive {
+            display: none;
+        }
+
+        &-func {
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+    
+            button {
+                @include btn(rgb(106, 101, 101), white, 15px, 12px, 20px);
+            }
+        }
+        
+        &-func button:hover {
+            transition: ease 0.5s;
+            background-color: rgb(127, 121, 121);
+        }
+    
+        &-numbers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+    
+            button {
+                @include btn(black, white, 15px, 15px, 35px);
+            }
+    
+            &-null {
+                grid-column: span 2;
+                width: 100%; 
+            }
+
+            &-adaptive {
+                display: none;
+            }
+        }
+
+        &-numbers button:hover {
+            transition: ease 0.5s;
+            background-color: rgb(56, 55, 55);
+        }
+    
+        &-symbols {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0;
+    
+            button {
+                @include btn(rgb(92, 175, 43), black, 15px, 12px, 35px);
+            }
+        }
+
+        &-symbols button:hover {
+            transition: ease 0.5s;
+            background-color: rgb(114, 218, 55);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background-color: black;
+        width: 350px;
+        height: 100%;
+        margin: 0 auto;
+    
+        &__windows{
+            display: flex;
+            flex-direction: column;
+
+        #output {
+            color: transparent; 
+            text-shadow: 0 0 0 rgb(111, 108, 108);
+        }
+       
+            input {
+                padding: 12px;
+                background-color: black;
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    
+        &__btn {
+            display: flex;
+            justify-content: space-between;
+        
+            &-adaptive {
+               background-color: rgb(106, 101, 101);
+               border: 1px solid rgb(161, 160, 160);
+               color: white;
+            }
+
+            &-func {
+            
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0;
+        
+                button {
+                    @include btn(rgb(106, 101, 101), white, 15px, 12px, 23px);
+                }
+            }
+            
+            &-func button:hover {
+                transition: ease 0.5s;
+                background-color: rgb(127, 121, 121);
+            }
+        
+            &-numbers {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0;
+                
+                button {
+                    @include btn(black, white, 15px, 15px, 36px);
+                }
+        
+                &-null {
+                    grid-column: span 1;
+                    width: 100%; 
+                }
+
+                &-adaptive {
+                    display: block;
+                }
+            }
+    
+            &-numbers button:hover {
+                transition: ease 0.5s;
+                background-color: rgb(56, 55, 55);
+            }
+        
+            &-symbols {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 0;
+        
+                button {
+                    @include btn(rgb(92, 175, 43), black, 15px, 12px, 40px);
+                }
+            }
+    
+            &-symbols button:hover {
+                transition: ease 0.5s;
+                background-color: rgb(114, 218, 55);
+            }
+        }
+    }
+}

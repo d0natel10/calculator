@@ -1,0 +1,21 @@
+// basic styles // 
+
+body {
+    background-color: rgb(206, 197, 197);
+    margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+input {
+    border: none;
+    outline: none;
+    direction: ltr;
+    text-align: right;
+}
+
+input:focus {
+    outline: none;
+}

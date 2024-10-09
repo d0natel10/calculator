@@ -1,0 +1,199 @@
+body {
+  background-color: rgb(206, 197, 197);
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  direction: ltr;
+  text-align: right;
+}
+
+input:focus {
+  outline: none;
+}
+
+.header {
+  background-color: black;
+  width: 550px;
+  height: 100%;
+  margin: 0 auto;
+}
+.header__windows {
+  display: flex;
+  flex-direction: column;
+}
+.header__windows #output {
+  color: transparent;
+  text-shadow: 0 0 0 rgb(111, 108, 108);
+}
+.header__windows input {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.header__btn {
+  display: flex;
+  justify-content: space-between;
+}
+.header__btn-adaptive {
+  display: none;
+}
+.header__btn-func {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.header__btn-func button {
+  border: 1px solid rgb(161, 160, 160);
+  background-color: rgb(106, 101, 101);
+  color: white;
+  font-size: 15px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+.header__btn-func button:hover {
+  transition: ease 0.5s;
+  background-color: rgb(127, 121, 121);
+}
+.header__btn-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.header__btn-numbers button {
+  border: 1px solid rgb(161, 160, 160);
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 15px 35px;
+  cursor: pointer;
+}
+.header__btn-numbers-null {
+  grid-column: span 2;
+  width: 100%;
+}
+.header__btn-numbers-adaptive {
+  display: none;
+}
+.header__btn-numbers button:hover {
+  transition: ease 0.5s;
+  background-color: rgb(56, 55, 55);
+}
+.header__btn-symbols {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0;
+}
+.header__btn-symbols button {
+  border: 1px solid rgb(161, 160, 160);
+  background-color: rgb(92, 175, 43);
+  color: black;
+  font-size: 15px;
+  padding: 12px 35px;
+  cursor: pointer;
+}
+.header__btn-symbols button:hover {
+  transition: ease 0.5s;
+  background-color: rgb(114, 218, 55);
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: black;
+    width: 350px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .header__windows {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__windows #output {
+    color: transparent;
+    text-shadow: 0 0 0 rgb(111, 108, 108);
+  }
+  .header__windows input {
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .header__btn {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__btn-adaptive {
+    background-color: rgb(106, 101, 101);
+    border: 1px solid rgb(161, 160, 160);
+    color: white;
+  }
+  .header__btn-func {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .header__btn-func button {
+    border: 1px solid rgb(161, 160, 160);
+    background-color: rgb(106, 101, 101);
+    color: white;
+    font-size: 15px;
+    padding: 12px 23px;
+    cursor: pointer;
+  }
+  .header__btn-func button:hover {
+    transition: ease 0.5s;
+    background-color: rgb(127, 121, 121);
+  }
+  .header__btn-numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .header__btn-numbers button {
+    border: 1px solid rgb(161, 160, 160);
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 15px 36px;
+    cursor: pointer;
+  }
+  .header__btn-numbers-null {
+    grid-column: span 1;
+    width: 100%;
+  }
+  .header__btn-numbers-adaptive {
+    display: block;
+  }
+  .header__btn-numbers button:hover {
+    transition: ease 0.5s;
+    background-color: rgb(56, 55, 55);
+  }
+  .header__btn-symbols {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+  .header__btn-symbols button {
+    border: 1px solid rgb(161, 160, 160);
+    background-color: rgb(92, 175, 43);
+    color: black;
+    font-size: 15px;
+    padding: 12px 40px;
+    cursor: pointer;
+  }
+  .header__btn-symbols button:hover {
+    transition: ease 0.5s;
+    background-color: rgb(114, 218, 55);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+@mixin btn($bg-color, $color, $font-size, $p-top, $p-bottom){
+
+    border: 1px solid rgb(161, 160, 160);
+    background-color: $bg-color;
+    color: $color;
+    font-size: $font-size;
+    padding: $p-top $p-bottom;
+    cursor: pointer;
+}
